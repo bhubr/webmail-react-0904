@@ -1,20 +1,35 @@
 import React from 'react';
 import EmailItem from './EmailItem.js'
 
+const users = [
+  {
+    image: 'img/common/tilo-avatar.png',
+    name: 'Tilo Mitra',
+    subject: 'Hello from Toronto',
+    content: 'Hey, I just wanted to check in with you from Toronto. I got here earlier today.'
+  },
+  {
+    name: 'Carlos Simmons',
+    image: 'https://randomuser.me/api/portraits/men/83.jpg',
+    subject: 'Hello my friend',
+    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry'
+  }
+]
+
 
 function EmailList() {
   return (
     <div id="list" class="pure-u-1">
-      <EmailItem
-        image="img/common/tilo-avatar.png"
-        name="Tilo Mitra"
-        subject="Hello from Toronto"
-        content="Hey, I just wanted to check in with you from Toronto. I got here earlier today."
-      />
-      <EmailItem />
-      <EmailItem />
-      <EmailItem />
-      <EmailItem />
+      {users.map(element => (
+        <EmailItem
+          image={element.image}
+          name={element.name}
+          subject={element.subject}
+          content={element.content}
+        />
+      ))
+      }
+
 
       <div class="email-item email-item-unread pure-g">
         <div class="pure-u">
