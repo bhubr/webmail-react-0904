@@ -2,22 +2,22 @@ import React from 'react';
 
 function EmailContent() {
   return (
-    <div id="main" class="pure-u-1">
-      <div class="email-content">
-        <div class="email-content-header pure-g">
-          <div class="pure-u-1-2">
+    <span id="main" class="pure-u-1">
+      <span class="email-content">
+        <span class="email-content-header pure-g">
+          <span class="pure-u-1-2">
             <h1 class="email-content-title">Hello from Toronto</h1>
             <p class="email-content-subtitle">
               From <a>Tilo Mitra</a> at <span>3:56pm, April 3, 2012</span>
             </p>
-          </div>
+          </span>
 
           <div class="email-content-controls pure-u-1-2">
             <button class="secondary-button pure-button">Reply</button>
             <button class="secondary-button pure-button">Forward</button>
             <button class="secondary-button pure-button">Move to</button>
           </div>
-        </div>
+        </span>
 
         <div class="email-content-body">
           <p>
@@ -37,8 +37,8 @@ function EmailContent() {
                 Tilo
                 </p>
         </div>
-      </div>
-    </div>
+      </span>
+    </span>
   );
 }
 
