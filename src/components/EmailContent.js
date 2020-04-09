@@ -2,24 +2,24 @@ import React from 'react';
 
 function EmailContent() {
   return (
-    <span id="main" class="pure-u-1">
-      <span class="email-content">
-        <span class="email-content-header pure-g">
-          <span class="pure-u-1-2">
-            <h1 class="email-content-title">Hello from Toronto</h1>
-            <p class="email-content-subtitle">
+    <div id="main" className="pure-u-1">
+      <div className="email-content">
+        <div className="email-content-header pure-g">
+          <div className="pure-u-1-2">
+            <div className="email-content-title">Hello from Toronto</div>
+            <p className="email-content-subtitle">
               From <a>Tilo Mitra</a> at <span>3:56pm, April 3, 2012</span>
             </p>
-          </span>
-
-          <div class="email-content-controls pure-u-1-2">
-            <button class="secondary-button pure-button">Reply</button>
-            <button class="secondary-button pure-button">Forward</button>
-            <button class="secondary-button pure-button">Move to</button>
           </div>
-        </span>
 
-        <div class="email-content-body">
+          <div className="email-content-controls pure-u-1-2">
+            <button className="secondary-button pure-button">Reply</button>
+            <button className="secondary-button pure-button">Forward</button>
+            <button className="secondary-button pure-button">Move to</button>
+          </div>
+        </div>
+
+        <div className="email-content-body">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
@@ -37,8 +37,8 @@ function EmailContent() {
                 Tilo
                 </p>
         </div>
-      </span>
-    </span>
+      </div>
+    </div>
   );
 }
 

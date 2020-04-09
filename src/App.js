@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   return (
-    <div id="layout" class="content pure-g">
+    <div id="layout" className="content pure-g">
       <Nav />
       <EmailList />
       <EmailContent />
